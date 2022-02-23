@@ -8,6 +8,7 @@ const Navbar = () => {
 
   const displaySubmenu = (e) => {
     const page = e.target.textContent;
+    console.log(page);
     const tempBtn = e.target.getBoundingClientRect();
     const center = (tempBtn.left + tempBtn.right) / 2;
     const bottom = tempBtn.bottom - 3;
@@ -26,17 +27,17 @@ const Navbar = () => {
         <ul className="nav-links">
           <li>
             <button className="link-btn" onMouseOver={displaySubmenu}>
-              Products
+              products
             </button>
           </li>
           <li>
             <button className="link-btn" onMouseOver={displaySubmenu}>
-              Developers
+              developers
             </button>
           </li>
           <li>
             <button className="link-btn" onMouseOver={displaySubmenu}>
-              Company
+              company
             </button>
           </li>
         </ul>
